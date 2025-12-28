@@ -23,14 +23,54 @@ const Contact: React.FC = () => {
 		setFormData((prev) => ({ ...prev, [name]: value }))
 	}
 
-	const handleSubmit = (e: React.FormEvent) => {
+	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault()
 		setStatus("submitting")
-		setTimeout(() => {
-			setStatus("success")
-			setFormData({ name: "", email: "", subject: "Inquiry", message: "" })
-			setTimeout(() => setStatus("idle"), 5000)
-		}, 1500)
+
+		try {
+			const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN
+			const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID
+
+			const message = `
+🔔 *Yangi xabar!*
+
+👤 *Ism:* ${formData.name}
+📧 *Email:* ${formData.email}
+📋 *Mavzu:* ${formData.subject}
+
+💬 *Xabar:*
+${formData.message}
+			`.trim()
+
+			const response = await fetch(
+				`https://api.telegram.org/bot${botToken}/sendMessage`,
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						chat_id: chatId,
+						text: message,
+						parse_mode: "Markdown",
+					}),
+				}
+			)
+
+			if (response.ok) {
+				setStatus("success")
+				setFormData({ name: "", email: "", subject: "Inquiry", message: "" })
+				setTimeout(() => setStatus("idle"), 5000)
+			} else {
+				throw new Error("Failed to send message")
+			}
+		} catch (error) {
+			console.error("Error sending message:", error)
+			setStatus("idle")
+			alert(
+				"Xabar yuborishda xatolik yuz berdi. Iltimos qaytadan urinib ko'ring."
+			)
+		}
 	}
 
 	return (
