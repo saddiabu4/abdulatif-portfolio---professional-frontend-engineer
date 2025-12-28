@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { PROJECTS } from "../constants"
 import ProjectCard from "../components/ProjectCard"
+import { PROJECTS } from "../constants"
 import { useLanguage } from "../context/LanguageContext"
 
 const Home: React.FC = () => {
 	const { t } = useLanguage()
 
-	// Matnni bo'laklarga ajratish va blue-600 klassini qo'llash
+	// Matnni bo'laklarga ajratish va blue-600 klassini qo'llash uchun yordamchi funksiya
 	const renderTitle = () => {
 		const fullTitle = t("hero.title")
 		const parts = fullTitle.split("|")
