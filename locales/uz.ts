@@ -1,61 +1,76 @@
-
 export default {
-  "nav": {
-    "home": "Asosiy",
-    "about": "Men haqimda",
-    "skills": "Ko'nikmalar",
-    "projects": "Loyihalar",
-    "experience": "Tajriba",
-    "services": "Xizmatlar",
-    "blog": "Blog",
-    "contact": "Aloqa",
-    "dashboard": "Boshqaruv",
-    "login": "Kirish"
-  },
-  "hero": {
-    "badge": "Frontend Arhitektor va UI Ishqibozi",
-    "title": "Kengayadigan raqamli |asarlar| yarataman.",
-    "subtitle": "Salom, men Abdulatifman. Men yuqori samaradorlikka ega, qulay va ajoyib ko'rinishdagi React ilovalarini yaratishga ixtisoslashganman.",
-    "cta_work": "Ishlarni ko'rish",
-    "cta_contact": "Bog'lanish"
-  },
-  "about": {
-    "title": "Men haqimda",
-    "bio": "Mening ismim Abdulatif. Men zamonaviy, tezkor va foydalanuvchilar uchun qulay veb-ilovalarni yaratishga e'tibor qaratgan Frontend dasturchisiman. Men JavaScript, React.js va Tailwind CSS bo'yicha mutaxassisman. Menga toza UI, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalarini yaratish yoqadi.",
-    "exp_years": "Yillik tajriba",
-    "projects_done": "Bajarilgan loyihalar",
-    "philosophy": "Mening falsafam",
-    "p1_title": "Samaradorlik birinchi o'rinda",
-    "p1_desc": "Men har bir millisoniya muhimligini ta'minlayman.",
-    "p2_title": "Foydalanish qulayligi",
-    "p2_desc": "Veb hamma uchun. Men ARIA va WCAG standartlariga rioya qilaman.",
-    "p3_title": "Vizual oqim",
-    "p3_desc": "Harakat hikoya qiladi. Men foydalanuvchi tajribasini yo'naltiraman."
-  },
-  "skills": {
-    "title": "Texnik Arsenal",
-    "subtitle": "G'oyalarni hayotga tatbiq etish uchun foydalanadigan vositalarim."
-  },
-  "contact": {
-    "title": "Bog'lanish",
-    "subtitle": "Loyihangiz bormi? Shaklni to'ldiring va men siz bilan bog'lanaman.",
-    "name": "Ism",
-    "email": "Email",
-    "subject": "Mavzu",
-    "message": "Xabar",
-    "send": "Yuborish",
-    "sending": "Yuborilmoqda...",
-    "success": "Muvaffaqiyatli yuborildi! ✅"
-  },
-  "projects": {
-    "title": "Ijodiy Olam",
-    "subtitle": "Turli texnologiyalarni qamrab olgan loyihalar to'plami.",
-    "view_details": "Batafsil"
-  },
-  "dashboard": {
-    "title": "Boshqaruv paneli",
-    "welcome": "Xush kelibsiz, Admin.",
-    "add_new": "Loyiha qo'shish",
-    "logout": "Chiqish"
-  }
-};
+	nav: {
+		home: "Bosh sahifa",
+		about: "Men haqimda",
+		skills: "Texnologiyalar",
+		projects: "Loyihalar",
+		experience: "Tajriba",
+		services: "Xizmatlar",
+		blog: "Blog",
+		contact: "Bog‘lanish",
+		dashboard: "Admin panel",
+		login: "Kirish",
+	},
+
+	hero: {
+		badge: "Frontend Developer • UI/UX Enthusiast",
+		title: "Kengaytiriladigan va zamonaviy |raqamli mahsulotlar| yarataman",
+		subtitle:
+			"Salom, men Abdulatifman. Men tezkor, ishonchli va chiroyli interfeyslarga ega React ilovalarini ishlab chiqishga ixtisoslashgan frontend dasturchiman.",
+		cta_work: "Loyihalarni ko‘rish",
+		cta_contact: "Bog‘lanish",
+	},
+
+	about: {
+		title: "Men haqimda",
+		bio: "Mening ismim Abdulatif. Men foydalanuvchi tajribasiga yo‘naltirilgan, zamonaviy va yuqori samaradorlikka ega veb-ilovalarni yaratadigan frontend dasturchiman. Asosan JavaScript, React.js va Tailwind CSS bilan ishlayman. Toza kod, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalar yaratish menga yoqadi.",
+		exp_years: "Yillik tajriba",
+		projects_done: "Yakunlangan loyihalar",
+		philosophy: "Ish falsafam",
+
+		p1_title: "Samaradorlik — ustuvorlik",
+		p1_desc:
+			"Har bir detal muhim. Men tez yuklanadigan va optimallashtirilgan interfeyslar yaratishga e’tibor beraman.",
+
+		p2_title: "Foydalanuvchi qulayligi",
+		p2_desc:
+			"Veb hamma uchun ochiq bo‘lishi kerak. Shuning uchun accessibility (ARIA, WCAG) standartlariga amal qilaman.",
+
+		p3_title: "Vizual hikoya",
+		p3_desc:
+			"Animatsiya shunchaki bezak emas — u foydalanuvchini yo‘naltiradi va tajribani boyitadi.",
+	},
+
+	skills: {
+		title: "Texnologik ko‘nikmalar",
+		subtitle:
+			"G‘oyalarni real mahsulotga aylantirishda foydalanadigan texnologiyalarim.",
+	},
+
+	projects: {
+		title: "Loyihalar portfeli",
+		subtitle:
+			"Turli sohalar va texnologiyalar asosida ishlab chiqilgan ishlarim.",
+		view_details: "Batafsil ko‘rish",
+	},
+
+	contact: {
+		title: "Bog‘lanish",
+		subtitle:
+			"Loyihangiz bormi yoki hamkorlikni xohlaysizmi? Quyidagi shaklni to‘ldiring.",
+		name: "Ismingiz",
+		email: "Email manzil",
+		subject: "Mavzu",
+		message: "Xabar",
+		send: "Yuborish",
+		sending: "Yuborilmoqda...",
+		success: "Xabar muvaffaqiyatli yuborildi! ✅",
+	},
+
+	dashboard: {
+		title: "Boshqaruv paneli",
+		welcome: "Xush kelibsiz, Abdulatif.",
+		add_new: "Yangi loyiha qo‘shish",
+		logout: "Chiqish",
+	},
+}

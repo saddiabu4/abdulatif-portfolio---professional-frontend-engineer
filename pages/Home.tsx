@@ -27,26 +27,26 @@ const Home: React.FC = () => {
 	return (
 		<div className='space-y-20 lg:space-y-32 animate-fade-in'>
 			<section className='flex flex-col lg:flex-row items-center justify-between gap-12 py-10 lg:py-24'>
-				<div className='w-full lg:w-2/3 space-y-6 lg:space-y-8 text-center lg:text-left'>
-					<div className='inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black tracking-[0.2em] uppercase'>
+				<div className='w-full lg:w-2/3 space-y-4 lg:space-y-6 text-center lg:text-left'>
+					<div className='inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-[9px] sm:text-[10px] font-black tracking-[0.2em] uppercase'>
 						{t("hero.badge")}
 					</div>
-					<h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tighter text-slate-900 text-balance'>
+					<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.1] tracking-tighter text-slate-900 text-balance'>
 						{renderTitle()}
 					</h1>
-					<p className='text-lg sm:text-xl text-slate-500 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium text-balance'>
+					<p className='text-base sm:text-lg text-slate-500 max-w-md mx-auto lg:mx-0 leading-relaxed font-medium text-balance'>
 						{t("hero.subtitle")}
 					</p>
-					<div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4'>
+					<div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4 pt-2 sm:pt-4'>
 						<Link
 							to='/projects'
-							className='px-10 py-5 bg-blue-600 text-white rounded-2xl font-bold shadow-2xl shadow-blue-600/30 hover:bg-blue-700 transition-all hover:scale-105 active:scale-95 text-center'
+							className='px-8 sm:px-10 py-4 sm:py-5 bg-blue-600 text-white rounded-2xl font-bold shadow-2xl shadow-blue-600/30 hover:bg-blue-700 transition-all hover:scale-105 active:scale-95 text-center text-sm sm:text-base'
 						>
 							{t("hero.cta_work")}
 						</Link>
 						<Link
 							to='/contact'
-							className='px-10 py-5 border-2 border-slate-200 text-slate-900 rounded-2xl font-bold hover:bg-white hover:border-blue-600 transition-all text-center'
+							className='px-8 sm:px-10 py-4 sm:py-5 border-2 border-slate-200 text-slate-900 rounded-2xl font-bold hover:bg-white hover:border-blue-600 transition-all text-center text-sm sm:text-base'
 						>
 							{t("hero.cta_contact")}
 						</Link>
