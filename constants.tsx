@@ -3,6 +3,20 @@ import { Blog, Experience, Project, Service, Skill } from "./types"
 export const PROJECTS: Project[] = [
 	{
 		id: "1",
+		title: "Freelancer Platform",
+		description:
+			"Freelancerlar uchun professional platforma - ish topish va buyurtma berish.",
+		longDescription:
+			"Freelancer Platform - freelancerlar va mijozlarni bog'lovchi zamonaviy platforma. Ish topish, buyurtma berish va portfolio yaratish imkoniyatlari.",
+		techStack: ["React", "Tailwind CSS", "TypeScript", "REST API"],
+		image:
+			"https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop",
+		liveUrl: "https://freelancer-sayt.vercel.app/",
+		githubUrl: "#",
+		category: "Web",
+	},
+	{
+		id: "2",
 		title: "Atif Transport 3D",
 		description:
 			"Zamonaviy 3D animatsiyali transport web sayt - yuk tashish va logistika xizmatlari.",
@@ -12,20 +26,6 @@ export const PROJECTS: Project[] = [
 		image:
 			"https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop",
 		liveUrl: "https://atif-ten.vercel.app/",
-		githubUrl: "#",
-		category: "Web",
-	},
-	{
-		id: "2",
-		title: "Velocity 3D Transport",
-		description:
-			"3D effektli transport va logistika platformasi - yuklarni kuzatish tizimi.",
-		longDescription:
-			"Velocity 3D Transport - zamonaviy transport logistika platformasi bo'lib, real vaqt rejimida yuk kuzatish va bron qilish imkoniyatini taqdim etadi.",
-		techStack: ["React", "Three.js", "Tailwind CSS", "TypeScript"],
-		image:
-			"https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&h=500&fit=crop",
-		liveUrl: "https://velocity-3d-transport.vercel.app/",
 		githubUrl: "#",
 		category: "Web",
 	},
