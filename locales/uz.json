@@ -2,29 +2,29 @@
 	"nav": {
 		"home": "Bosh sahifa",
 		"about": "Men haqimda",
-		"skills": "Ko‘nikmalar",
+		"skills": "Ko'nikmalar",
 		"projects": "Loyihalar",
 		"experience": "Tajriba",
 		"blog": "Blog",
-		"contact": "Bog‘lanish",
+		"contact": "Bog'lanish",
 		"dashboard": "Boshqaruv paneli"
 	},
 	"hero": {
 		"badge": "Frontend Developer • UI/UX ishqibozi",
 		"title": "Kengaytiriladigan va zamonaviy raqamli mahsulotlar yarataman.",
-		"subtitle": "Salom, men Abdulatifman. Men tezkor, qulay va estetik jihatdan mukammal React ilovalarini ishlab chiqishga ixtisoslashgan frontend dasturchiman.",
-		"cta_work": "Loyihalarni ko‘rish",
-		"cta_contact": "Bog‘lanish"
+		"subtitle": "Salom, men Atifman. Men tezkor, qulay va estetik jihatdan mukammal React ilovalarini ishlab chiqishga ixtisoslashgan frontend dasturchiman.",
+		"cta_work": "Loyihalarni ko'rish",
+		"cta_contact": "Bog'lanish"
 	},
 	"about": {
 		"title": "Men haqimda",
-		"bio": "Mening ismim Abdulatif. Men zamonaviy, yuqori samaradorlikka ega va foydalanuvchi tajribasiga yo‘naltirilgan veb-ilovalar yaratuvchi frontend dasturchiman. Asosan JavaScript, React.js va Tailwind CSS bilan ishlayman. Toza UI, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalar yaratish menga yoqadi.",
+		"bio": "Mening ismim Atif. Men zamonaviy, yuqori samaradorlikka ega va foydalanuvchi tajribasiga yo'naltirilgan veb-ilovalar yaratuvchi frontend dasturchiman. Asosan JavaScript, React.js va Tailwind CSS bilan ishlayman. Toza UI, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalar yaratish menga yoqadi.",
 		"exp_years": "Yillik tajriba",
 		"projects_done": "Yakunlangan loyihalar"
 	},
 	"contact": {
-		"title": "Bog‘lanish",
-		"subtitle": "Loyihangiz bormi yoki hamkorlikni xohlaysizmi? Quyidagi shaklni to‘ldiring.",
+		"title": "Bog'lanish",
+		"subtitle": "Loyihangiz bormi yoki hamkorlikni xohlaysizmi? Quyidagi shaklni to'ldiring.",
 		"name": "Ismingiz",
 		"email": "Email manzilingiz",
 		"subject": "Mavzu",

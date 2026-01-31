@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react"
 import { HashRouter, Route, Routes } from "react-router-dom"
 import Layout from "./components/Layout"
+import ScrollToTop from "./components/ScrollToTop"
 import { AuthProvider } from "./context/AuthContext"
 import { LanguageProvider } from "./context/LanguageContext"
 
@@ -32,6 +33,7 @@ const App: React.FC = () => {
 		<LanguageProvider>
 			<AuthProvider>
 				<HashRouter>
+					<ScrollToTop />
 					<Suspense fallback={<LoadingSpinner />}>
 						<Routes>
 							<Route path='/' element={<Layout />}>

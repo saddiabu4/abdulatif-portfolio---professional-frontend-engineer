@@ -12,7 +12,7 @@ const About: React.FC = () => {
 						<img
 							src='https://picsum.photos/seed/bio/400/600'
 							className='w-full h-full object-cover mix-blend-overlay'
-							alt='Abdulatif Bio'
+							alt='Atif Bio'
 						/>
 					</div>
 				</div>

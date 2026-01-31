@@ -50,10 +50,7 @@ const Layout: React.FC = () => {
 						to='/'
 						className='text-xl md:text-2xl font-extrabold tracking-tighter text-blue-500 relative z-[210]'
 					>
-						ABDULATIF
-						<span className={isMenuOpen ? "text-slate-500" : "text-slate-100"}>
-							.DEV
-						</span>
+						ATIF
 					</Link>
 
 					{/* Desktop Nav */}
@@ -219,7 +216,7 @@ const Layout: React.FC = () => {
 								to='/'
 								className='text-2xl font-black tracking-tighter text-blue-500'
 							>
-								ABDULATIF<span className='text-slate-100'>.DEV</span>
+								ATIF
 							</Link>
 							<p className='text-sm text-slate-400 leading-relaxed max-w-xs mx-auto md:mx-0'>
 								Frontend Architect focused on creating high-performance digital

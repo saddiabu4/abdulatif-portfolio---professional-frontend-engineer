@@ -2,6 +2,19 @@ import { Blog, Experience, Project, Service, Skill } from "./types"
 
 export const PROJECTS: Project[] = [
 	{
+		id: "10",
+		title: "Atif Movie",
+		description: "Filmlar platformasi - filmlarni qidirish va ko'rish ilovasi.",
+		longDescription:
+			"Atif Movie - zamonaviy filmlar platformasi bo'lib, filmlarni qidirish, ma'lumotlarini ko'rish va sevimli filmlarni saqlash imkoniyatlarini taqdim etadi.",
+		techStack: ["React", "Tailwind CSS", "REST API", "TypeScript"],
+		image:
+			"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=500&fit=crop",
+		liveUrl: "https://atif-movie.vercel.app/",
+		githubUrl: "#",
+		category: "Web",
+	},
+	{
 		id: "1",
 		title: "Freelancer Platform",
 		description:
@@ -115,7 +128,7 @@ export const PROJECTS: Project[] = [
 		title: "Paint Loyihasi",
 		description: "Rasm chizish ilovasi - kreativ va interaktiv paint dasturi.",
 		longDescription:
-			"Abdulatif Paint - brauzerda ishlaydigan professional rasm chizish ilovasi, turli cho'tkalar va ranglar bilan ishlash imkoniyati.",
+			"Atif Paint - brauzerda ishlaydigan professional rasm chizish ilovasi, turli cho'tkalar va ranglar bilan ishlash imkoniyati.",
 		techStack: ["React", "Canvas API", "Tailwind CSS", "TypeScript"],
 		image:
 			"https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=500&fit=crop",
@@ -147,7 +160,7 @@ export const BLOGS: Blog[] = [
 		content:
 			"React 18 brought a significant shift in how we handle rendering. In this post, we explore the nuances of concurrent mode...",
 		date: "March 15, 2024",
-		author: "Abdulatif",
+		author: "Atif",
 		category: "Frontend",
 		image: "https://picsum.photos/seed/blog1/800/400",
 	},
@@ -159,7 +172,7 @@ export const BLOGS: Blog[] = [
 		content:
 			"The styling landscape in the React ecosystem is vast. We analyze performance, developer experience, and scalability...",
 		date: "February 20, 2024",
-		author: "Abdulatif",
+		author: "Atif",
 		category: "Styling",
 		image: "https://picsum.photos/seed/blog2/800/400",
 	},
