@@ -43,29 +43,29 @@ const Layout: React.FC = () => {
 	}
 
 	return (
-		<div className='min-h-screen flex flex-col bg-slate-50 text-slate-900 overflow-x-hidden'>
-			<header className='sticky top-0 z-[100] glass shadow-sm transition-all duration-300'>
+		<div className='min-h-screen flex flex-col bg-slate-950 text-slate-100 overflow-x-hidden'>
+			<header className='sticky top-0 z-[100] glass shadow-lg shadow-slate-950/50 transition-all duration-300'>
 				<nav className='container mx-auto px-4 md:px-6 py-4 flex justify-between items-center'>
 					<Link
 						to='/'
-						className='text-xl md:text-2xl font-extrabold tracking-tighter text-blue-600 relative z-[210]'
+						className='text-xl md:text-2xl font-extrabold tracking-tighter text-blue-500 relative z-[210]'
 					>
 						ABDULATIF
-						<span className={isMenuOpen ? "text-slate-400" : "text-slate-900"}>
+						<span className={isMenuOpen ? "text-slate-500" : "text-slate-100"}>
 							.DEV
 						</span>
 					</Link>
 
 					{/* Desktop Nav */}
 					<div className='hidden lg:flex items-center space-x-6'>
-						<div className='flex space-x-6 items-center border-r border-slate-200 pr-6'>
+						<div className='flex space-x-6 items-center border-r border-slate-700 pr-6'>
 							{navLinks.map((link) => (
 								<NavLink
 									key={link.to}
 									to={link.to}
 									className={({ isActive }) =>
-										`text-xs font-bold uppercase tracking-widest transition-colors hover:text-blue-500 ${
-											isActive ? "text-blue-600" : "text-slate-500"
+										`text-xs font-bold uppercase tracking-widest transition-colors hover:text-blue-400 ${
+											isActive ? "text-blue-500" : "text-slate-400"
 										}`
 									}
 								>
@@ -75,7 +75,7 @@ const Layout: React.FC = () => {
 							{isAuthenticated && (
 								<Link
 									to='/dashboard'
-									className='text-xs font-bold text-emerald-600 uppercase tracking-widest hover:text-emerald-500'
+									className='text-xs font-bold text-emerald-500 uppercase tracking-widest hover:text-emerald-400'
 								>
 									{t("nav.dashboard")}
 								</Link>
@@ -83,7 +83,7 @@ const Layout: React.FC = () => {
 						</div>
 
 						{/* Language Switcher Desktop */}
-						<div className='flex bg-white border border-slate-200 rounded-lg p-1 shadow-sm'>
+						<div className='flex bg-slate-900 border border-slate-700 rounded-lg p-1 shadow-sm'>
 							{(["EN", "RU", "UZ"] as const).map((lang) => (
 								<button
 									key={lang}
@@ -91,7 +91,7 @@ const Layout: React.FC = () => {
 									className={`px-3 py-1.5 text-[10px] font-bold rounded-md transition-all ${
 										language === lang
 											? "bg-blue-600 text-white shadow-md"
-											: "text-slate-400 hover:text-slate-600"
+											: "text-slate-400 hover:text-slate-200"
 									}`}
 								>
 									{lang}
@@ -102,7 +102,7 @@ const Layout: React.FC = () => {
 
 					{/* Mobile Menu Toggle Button - Requirement 7.2 */}
 					<button
-						className='lg:hidden p-2 text-slate-900 focus:outline-none z-[210]'
+						className='lg:hidden p-2 text-slate-100 focus:outline-none z-[210]'
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 						aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					>
@@ -131,7 +131,7 @@ const Layout: React.FC = () => {
           Requirement 4: Smooth Slide-in Animation
         */}
 				<div
-					className={`fixed inset-0 w-screen h-screen bg-white z-[200] lg:hidden transition-transform duration-500 ease-in-out transform ${
+					className={`fixed inset-0 w-screen h-screen bg-slate-950 z-[200] lg:hidden transition-transform duration-500 ease-in-out transform ${
 						isMenuOpen ? "translate-x-0" : "translate-x-full"
 					} overflow-y-auto`}
 				>
@@ -153,8 +153,8 @@ const Layout: React.FC = () => {
 												: "translate-x-12 opacity-0"
 										} ${
 											isActive
-												? "text-blue-600 bg-blue-50/50"
-												: "text-slate-900 active:bg-slate-50"
+												? "text-blue-500 bg-slate-900"
+												: "text-slate-100 active:bg-slate-900"
 										}`
 									}
 								>
@@ -166,7 +166,7 @@ const Layout: React.FC = () => {
 								<Link
 									to='/dashboard'
 									onClick={handleLinkClick}
-									className='block px-6 py-5 rounded-[2rem] text-4xl font-black text-emerald-600 uppercase tracking-tighter active:bg-emerald-50 transition-all duration-300'
+									className='block px-6 py-5 rounded-[2rem] text-4xl font-black text-emerald-500 uppercase tracking-tighter active:bg-slate-900 transition-all duration-300'
 								>
 									{t("nav.dashboard")}
 								</Link>
@@ -176,7 +176,7 @@ const Layout: React.FC = () => {
 						{/* Requirement 6: Language Switcher at Bottom */}
 						<div className='mt-auto pt-10 space-y-6'>
 							<div className='space-y-4'>
-								<p className='px-6 text-[10px] font-black uppercase tracking-[0.3em] text-slate-400'>
+								<p className='px-6 text-[10px] font-black uppercase tracking-[0.3em] text-slate-500'>
 									Environment Language
 								</p>
 								<div className='flex gap-3 px-2'>
@@ -186,8 +186,8 @@ const Layout: React.FC = () => {
 											onClick={() => setLanguage(lang)}
 											className={`flex-grow py-5 text-sm font-black rounded-2xl border-2 transition-all active:scale-95 ${
 												language === lang
-													? "bg-slate-900 border-slate-900 text-white shadow-2xl shadow-slate-900/20"
-													: "border-slate-100 bg-slate-50 text-slate-500"
+													? "bg-blue-600 border-blue-600 text-white shadow-2xl shadow-blue-600/20"
+													: "border-slate-800 bg-slate-900 text-slate-400"
 											}`}
 										>
 											{lang}
@@ -195,8 +195,8 @@ const Layout: React.FC = () => {
 									))}
 								</div>
 							</div>
-							<div className='pt-8 border-t border-slate-50 px-6'>
-								<p className='text-[10px] text-slate-300 font-black uppercase tracking-widest'>
+							<div className='pt-8 border-t border-slate-800 px-6'>
+								<p className='text-[10px] text-slate-600 font-black uppercase tracking-widest'>
 									Architecture v2.0 • 2024
 								</p>
 							</div>
@@ -211,29 +211,29 @@ const Layout: React.FC = () => {
 				</div>
 			</main>
 
-			<footer className='bg-white border-t border-slate-100 py-16'>
+			<footer className='bg-slate-900 border-t border-slate-800 py-16'>
 				<div className='container mx-auto px-6'>
 					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left'>
 						<div className='space-y-4'>
 							<Link
 								to='/'
-								className='text-2xl font-black tracking-tighter text-blue-600'
+								className='text-2xl font-black tracking-tighter text-blue-500'
 							>
-								ABDULATIF<span className='text-slate-900'>.DEV</span>
+								ABDULATIF<span className='text-slate-100'>.DEV</span>
 							</Link>
-							<p className='text-sm text-slate-500 leading-relaxed max-w-xs mx-auto md:mx-0'>
+							<p className='text-sm text-slate-400 leading-relaxed max-w-xs mx-auto md:mx-0'>
 								Frontend Architect focused on creating high-performance digital
 								experiences with React and modern CSS.
 							</p>
 						</div>
 						<div className='space-y-4'>
-							<h4 className='font-bold text-slate-900'>Navigation</h4>
+							<h4 className='font-bold text-slate-100'>Navigation</h4>
 							<ul className='space-y-2'>
 								{navLinks.slice(0, 4).map((link) => (
 									<li key={link.to}>
 										<Link
 											to={link.to}
-											className='text-sm text-slate-500 hover:text-blue-600 transition-colors'
+											className='text-sm text-slate-400 hover:text-blue-500 transition-colors'
 										>
 											{link.label}
 										</Link>
@@ -242,44 +242,44 @@ const Layout: React.FC = () => {
 							</ul>
 						</div>
 						<div className='space-y-4'>
-							<h4 className='font-bold text-slate-900'>Contact</h4>
+							<h4 className='font-bold text-slate-100'>Contact</h4>
 							<ul className='space-y-2'>
-								<li className='text-sm text-slate-500'>saddiabu4@gmail.com</li>
-								<li className='text-sm text-slate-500'>+998 90 149 79 90</li>
+								<li className='text-sm text-slate-400'>saddiabu4@gmail.com</li>
+								<li className='text-sm text-slate-400'>+998 90 149 79 90</li>
 							</ul>
 						</div>
 						<div className='space-y-4'>
-							<h4 className='font-bold text-slate-900'>Follow</h4>
+							<h4 className='font-bold text-slate-100'>Follow</h4>
 							<div className='flex justify-center md:justify-start gap-4'>
 								<a
 									href='#'
-									className='w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
+									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<Github />
 								</a>
 								<a
 									href='#'
-									className='w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
+									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<Linkedin />
 								</a>
 								<a
 									href='#'
-									className='w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
+									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<X />
 								</a>
 								<a
 									href='#'
-									className='w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
+									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<Send />
 								</a>
 							</div>
 						</div>
 					</div>
-					<div className='mt-16 pt-8 border-t border-slate-50 text-center'>
-						<p className='text-xs text-slate-400'>
+					<div className='mt-16 pt-8 border-t border-slate-800 text-center'>
+						<p className='text-xs text-slate-500'>
 							© 2024 Abdulatif. Barcha huquqlar himoyalangan.
 						</p>
 					</div>
