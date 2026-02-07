@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import ProjectCard from "../components/ProjectCard"
 import { PROJECTS } from "../constants"
 import { useLanguage } from "../context/LanguageContext"
+import Image from "../avatar-ozim.png"
 
 const Home: React.FC = () => {
 	const { t } = useLanguage()
@@ -56,7 +57,7 @@ const Home: React.FC = () => {
 				<div className='w-full lg:w-1/3 relative px-4 sm:px-10 lg:px-0'>
 					<div className='relative w-full aspect-square rounded-[2rem] sm:rounded-[3rem] overflow-hidden shadow-3xl group border border-slate-800'>
 						<img
-							src='https://picsum.photos/seed/atif/800/800'
+							src={Image}
 							className='w-full h-full object-cover transition-transform duration-1000 lg:grayscale lg:group-hover:grayscale-0 group-hover:scale-110'
 							alt='Atif Profile'
 						/>

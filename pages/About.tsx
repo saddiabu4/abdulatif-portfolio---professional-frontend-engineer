@@ -1,5 +1,6 @@
 import React from "react"
 import { useLanguage } from "../context/LanguageContext"
+import Image from "../avatar-ozim.png"
 
 const About: React.FC = () => {
 	const { t } = useLanguage()
@@ -10,7 +11,7 @@ const About: React.FC = () => {
 				<div className='md:w-1/3 relative'>
 					<div className='aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl bg-blue-600 border border-slate-800'>
 						<img
-							src='https://picsum.photos/seed/bio/400/600'
+							src={Image}
 							className='w-full h-full object-cover mix-blend-overlay'
 							alt='Atif Bio'
 						/>

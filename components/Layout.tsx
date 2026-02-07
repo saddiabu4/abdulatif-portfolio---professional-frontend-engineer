@@ -249,25 +249,25 @@ const Layout: React.FC = () => {
 							<h4 className='font-bold text-slate-100'>Follow</h4>
 							<div className='flex justify-center md:justify-start gap-4'>
 								<a
-									href='#'
+									href='https://github.com/saddiabu4'
 									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<Github />
 								</a>
 								<a
-									href='#'
+									href='https://www.linkedin.com/in/sodiqjonov-abdulatif-35a243371/'
 									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<Linkedin />
 								</a>
 								<a
-									href='#'
+									href='https://x.com/saddi_abu/'
 									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<X />
 								</a>
 								<a
-									href='#'
+									href='https://t.me/saddi_abu'
 									className='w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm'
 								>
 									<Send />
