@@ -11,14 +11,14 @@
 	},
 	"hero": {
 		"badge": "Frontend Developer • UI/UX ishqibozi",
-		"title": "Kengaytiriladigan va zamonaviy raqamli mahsulotlar yarataman.",
-		"subtitle": "Salom, men Atifman. Men tezkor, qulay va estetik jihatdan mukammal React ilovalarini ishlab chiqishga ixtisoslashgan frontend dasturchiman.",
+		"title": "Frontend orqali kuchli foydalanuvchi tajribasini yarataman.",
+		"subtitle": "Salom, men Abdulatif. Men tezkor, qulay va estetik jihatdan mukammal React ilovalarini ishlab chiqishga ixtisoslashgan frontend dasturchiman.",
 		"cta_work": "Loyihalarni ko'rish",
 		"cta_contact": "Bog'lanish"
 	},
 	"about": {
 		"title": "Men haqimda",
-		"bio": "Mening ismim Atif. Men zamonaviy, yuqori samaradorlikka ega va foydalanuvchi tajribasiga yo'naltirilgan veb-ilovalar yaratuvchi frontend dasturchiman. Asosan JavaScript, React.js va Tailwind CSS bilan ishlayman. Toza UI, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalar yaratish menga yoqadi.",
+		"bio": "Mening ismim Abdulatif. Men zamonaviy, yuqori samaradorlikka ega va foydalanuvchi tajribasiga yo'naltirilgan veb-ilovalar yaratuvchi frontend dasturchiman. Asosan JavaScript, React.js va Tailwind CSS bilan ishlayman. Toza UI, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalar yaratish menga yoqadi.",
 		"exp_years": "Yillik tajriba",
 		"projects_done": "Yakunlangan loyihalar"
 	},

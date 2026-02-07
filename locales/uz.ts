@@ -14,16 +14,16 @@ export default {
 
 	hero: {
 		badge: "Frontend Developer • UI/UX Enthusiast",
-		title: "Kengaytiriladigan va zamonaviy |raqamli mahsulotlar| yarataman",
+		title: "Frontend orqali kuchli foydalanuvchi tajribasini yarataman.",
 		subtitle:
-			"Salom, men Atifman. Men tezkor, ishonchli va chiroyli interfeyslarga ega React ilovalarini ishlab chiqishga ixtisoslashgan frontend dasturchiman.",
+			"Salom, men Abdulatif. Men tezkor, ishonchli va chiroyli interfeyslarga ega React ilovalarini ishlab chiqishga ixtisoslashgan frontend dasturchiman.",
 		cta_work: "Loyihalarni ko'rish",
 		cta_contact: "Bog'lanish",
 	},
 
 	about: {
 		title: "Men haqimda",
-		bio: "Mening ismim Atif. Men foydalanuvchi tajribasiga yo'naltirilgan, zamonaviy va yuqori samaradorlikka ega veb-ilovalarni yaratadigan frontend dasturchiman. Asosan JavaScript, React.js va Tailwind CSS bilan ishlayman. Toza kod, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalar yaratish menga yoqadi.",
+		bio: "Mening ismim Abdulatif. Men foydalanuvchi tajribasiga yo'naltirilgan, zamonaviy va yuqori samaradorlikka ega veb-ilovalarni yaratadigan frontend dasturchiman. Asosan JavaScript, React.js va Tailwind CSS bilan ishlayman. Toza kod, silliq animatsiyalar va kengaytiriladigan frontend arxitekturalar yaratish menga yoqadi.",
 		exp_years: "Yillik tajriba",
 		projects_done: "Yakunlangan loyihalar",
 		philosophy: "Ish falsafam",
