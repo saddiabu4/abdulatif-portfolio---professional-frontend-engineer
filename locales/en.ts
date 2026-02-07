@@ -15,13 +15,13 @@ export default {
 		badge: "Frontend Architect & UI Enthusiast",
 		title: "Building Digital |Masterpieces| that Scale.",
 		subtitle:
-			"Hi, I'm Atif. I specialize in creating high-performance, accessible, and stunningly beautiful React applications.",
+			"Hi, I'm Abdulatif. I specialize in creating high-performance, accessible, and stunningly beautiful React applications.",
 		cta_work: "View Work",
 		cta_contact: "Contact Me",
 	},
 	about: {
 		title: "About Me",
-		bio: "My name is Atif. I am a Frontend Developer focused on building modern, fast, and user-friendly web applications. I specialize in JavaScript, React.js, and Tailwind CSS. I enjoy creating clean UI, smooth animations, and scalable frontend architectures.",
+		bio: "My name is Abdulatif. I am a Frontend Developer focused on building modern, fast, and user-friendly web applications. I specialize in JavaScript, React.js, and Tailwind CSS. I enjoy creating clean UI, smooth animations, and scalable frontend architectures.",
 		exp_years: "Years Experience",
 		projects_done: "Projects Completed",
 		philosophy: "My Philosophy",
